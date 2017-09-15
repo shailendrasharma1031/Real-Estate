@@ -44,7 +44,8 @@ if(sds == null){alert("You are using a free package.\n You are not allowed to re
  
         <?php  
 $sql="SELECT * FROM property ORDER BY id_property DESC";
-$result=mysql_query($sql) or die("Cannot execute sql.");
+$result=mysql_query($sql) or die("Cannot execute sql.");//this line is giving error as :
+            Fatal error: Uncaught Error: Call to undefined function mysql_query() in C:\xampp\htdocs\Real-Estate-master\index.php:47 Stack trace: #0 {main} thrown in C:\xampp\htdocs\Real-Estate-master\index.php on line 47
 
 $i=0;
 $items=mysql_num_rows($result);
